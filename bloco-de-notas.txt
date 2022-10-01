@@ -1,0 +1,53 @@
+body =>
+
+*header =>
+div class = "container-header"
+h1 <span>Control</span> Finance
+button class="button-add" "Registrar novo valor"
+
+*main =>
+div class="resumo"{
+h2 "Resumo financeiro"
+<div class="buttons-resumo"{
+button class="button-nav" "Todos"
+button class="button-nav" "Entradas"
+button class="button-nav" "Saídas"
+}
+}
+div class="soma"{
+h2 "Soma dos valores"
+p R$ 0,00
+} 
+div class="container-registros"{
+h2 "Nenhum valor cadastrado"
+p "Registrar um novo valor"
+}
+}
+
+button class="button-add" "Registrar novo valor"
+ => Modal
+section class="container-modal"{
+div class="modal-title"{
+h3 "Registro do valor"(negrito)
+button class="button-fechar"
+}
+span class="modal-p"{
+p "Digite o valor e em seguida aperte no botão referente ao tipo do valor"
+}
+div class="modal-valor"{
+h4 "Valor"
+input R$ type placeholder 0,00
+}
+div class="container-tipo"{
+h4 "Tipo de valor"
+button class="button-nav" "Entradas"
+button class="button-nav" "Saídas"
+}
+div class="botoes-enviar"{
+button class="button-modal" "Cancelar"
+button class="button-modal" "Inserir valor"
+
+}
+
+
+

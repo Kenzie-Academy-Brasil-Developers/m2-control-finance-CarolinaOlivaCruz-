@@ -1,0 +1,25 @@
+#body-modal{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#container-modal {
+    width: 70%;
+    max-width: 343px;
+    margin: 60px auto;
+    padding: 24px;
+    background-color: var(--color-mode);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid black;
+}
+ 
+.modal-title {
+    display: flex;
+    justify-content: space-between;
+}
