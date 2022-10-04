@@ -72,7 +72,7 @@ main {
     font-size: var(--font-size-2);
 }
 
-.container-registros{
+/* .container-registros{
     height: 90px;
     background-color: var(--color-grey-5);
     color: var(--color-grey-1);
@@ -85,7 +85,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     flex-direction: column;
-}
+} */
 
 @media (min-width: 700px){
     header {

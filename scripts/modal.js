@@ -21,37 +21,45 @@ function renderModal() {
     modalTitleP.innerText = "Digite o valor e em seguida aperte no botão"
 
     const form = document.createElement("form")
+
     const modalValor = document.createElement("div")
+    modalValor.className = "div-modal-valor"
     const modalValorH4 = document.createElement("h4")
     modalValorH4.innerText = "Valor"
     const modalValorInput = document.createElement("input")
+    modalValorInput.className = "modal-valor-input"
     modalValorInput.type = "number"
     modalValorInput.required = true
     modalValorInput.placeholder = "0,00"
+    
 
     const containerTipo = document.createElement("div")
+    containerTipo.className = "containerTipo"
     const containerTipoH4 = document.createElement("h4")
     containerTipoH4.innerText = "Tipo de valor"
     const containerTipoButton1 = document.createElement("button")
     containerTipoButton1.innerText = "Entrada"
-    containerTipoButton1.className = "button-nav"
+    containerTipoButton1.className = "button-tipo-modal"
     containerTipoButton1.addEventListener('click', () => {
         categoria = 1
     })
 
     const containerTipoButton2 = document.createElement("button")
     containerTipoButton2.innerText = "Saída"
-    containerTipoButton2.className = "button-nav"
+    containerTipoButton2.className = "button-tipo-modal"
     containerTipoButton2.addEventListener('click', () => {
         categoria = 2
     })
 
     const botoesEnviar = document.createElement("div")
+    botoesEnviar.className = "div-botoes-enviar"
     const botoesEnviar1 = document.createElement("button")
     botoesEnviar1.innerText = "Cancelar"
+    botoesEnviar1.className = "button-enviar-modal"
     const botoesEnviar2 = document.createElement("button")
     botoesEnviar2.innerText = "Inserir valor"
     botoesEnviar2.type = "submit"
+    botoesEnviar2.className = "button-enviar-modal"
     botoesEnviar2.addEventListener('click', () => {
         let valorInserido = modalValorInput.value
         salvarValor(categoria, valorInserido)

@@ -3,8 +3,11 @@ const cardFinance = (element, array, index) => {
     const li = document.createElement("li")
     const pPreco = document.createElement("p")
     const div = document.createElement("div")
+    div.className = "div-list"
     const pTipo = document.createElement("p")
+    pTipo.className = "p-tipo"
     const button = document.createElement("button")
+    button.className = "button-nav"
 
     pPreco.innerText = element.value.toLocaleString("pt-br", { style: "currency", currency: "BRL", })
 
@@ -15,11 +18,12 @@ const cardFinance = (element, array, index) => {
     }
 
     button.innerHTML = `<i class="fa-solid fa-trash"></i>`
-    button.addEventListener('click', (event)=>{
+    button.addEventListener('click', (event) => {
         event.preventDefault()
         array.splice(index, 1)
         listFinance(insertedValues)
     })
+
 
     div.append(pTipo, button)
     li.append(pPreco, div)
@@ -29,21 +33,15 @@ const cardFinance = (element, array, index) => {
 const listFinance = (array) => {
     const div = document.querySelector(".container-registros")
     const ul = document.createElement("ul")
+    ul.className = "list-finance"
     div.innerHTML = ""
+    
+    soma(array)
 
     array.forEach((element, index) => {
         ul.appendChild(cardFinance(element, array, index))
     });
     div.appendChild(ul)
+
 }
 listFinance(insertedValues)
-
-//     li.innerHTML = `
-    // <p>${element.value.toLocaleString("pt-br", { style: "currency", currency: "BRL", })}</p>
-    // <div>
-    //     <p>${element.categoryID === 1 ? "Entrada" : "Saída"}</p>
-    //     <button onClick=${() => {console.log("oi")}}>
-    //         <i class="fa-solid fa-trash"></i>
-    //     </button>
-    // </div>
-    // `

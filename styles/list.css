@@ -1,0 +1,35 @@
+.list-finance{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.list-finance li {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid var(--color-grey-4);
+    border-radius: var(--radius-1);
+}
+
+.list-finance li p {
+    font-weight: bold;
+}
+
+.div-list {
+    display: flex;
+    gap: 20px;
+}
+
+.p-tipo {
+    width: 80px;
+    padding: 5px;
+    text-align: center;
+    border-radius: var(--radius-1);
+    border: 2px solid var(--color-grey-4);
+    background-color: var(--color-grey-5);
+    color: var(--color-grey-2);
+    font-family: var(--font-family-2);
+    
+}

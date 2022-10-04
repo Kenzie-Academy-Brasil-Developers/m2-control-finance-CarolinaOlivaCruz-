@@ -1,4 +1,4 @@
-#body-modal{
+#body-modal {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -16,10 +16,43 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border: 2px solid black;
+    border: none;
+    border-radius: var(--radius-1);
 }
- 
+
 .modal-title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
+
+.div-modal-valor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.containerTipo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.div-botoes-enviar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media(min-width: 700px){
+
+    .containerTipo {
+        flex-direction: row;
+    }
+
+    .div-botoes-enviar {
+        justify-content: end;
+        gap: 10px;
+    }
+}
+

@@ -8,9 +8,10 @@
     <title>Control Finance</title>
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
     <meta name="description" content="Control Finance - Seu controle financeiro">
-    <link rel="stylesheet" href="styles/button.css">
-    <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="styles/globalStyles.css">
+    <link rel="stylesheet" href="styles/button.css">
+    <link rel="stylesheet" href="styles/list.css">
+    <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="pages/home/index.css">
     <script src="https://kit.fontawesome.com/50a98bd9ef.js" crossorigin="anonymous"></script>
 </head>
@@ -26,14 +27,14 @@
         <div class="resumo">
             <h2>Resumo financeiro</h2>
             <div class="buttons-resumo">
-                <button class="button-nav" type="submit">Todos</button>
-                <button class="button-nav" type="submit">Entradas</button>
-                <button class="button-nav" type="submit">Saídas</button>
+                <button class="button-nav" type="submit" id="navTodos">Todos</button>
+                <button class="button-nav" type="submit" id="nav1">Entradas</button>
+                <button class="button-nav" type="submit" id="nav2">Saídas</button>
             </div>
         </div>
         <div class="soma">
             <h2>Soma dos valores</h2>
-            <p>R$ 0,00</p>
+            <p class="soma-p" id="soma-p"></p>
         </div>
         <div class="container-registros">
             <!-- <h2>Nenhum valor encontrado</h2>
@@ -53,7 +54,7 @@
     </main>
     <script src="scripts/modal.js"></script>
     <script src="pages/home/valuesData.js"></script>
-    <script src="pages/home/index.js"></script>
+    <script src="./pages/home/index.js"></script>
     <script src="scripts/listCard.js"></script>
 </body>
 
